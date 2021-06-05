@@ -1,0 +1,27 @@
+<div [ngClass]="{ down: change < 0, up: change > 0 }">
+  <div class="btc-container container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>
+          <fa-icon [icon]="faBitcoin" class="icon"></fa-icon
+          >{{ bitcoinData.last | currency }}
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <h6>
+          <fa-icon [icon]="faCaretUp" class="icon"></fa-icon>
+          <span class="icon">{{ bitcoinData.high | currency }}</span>
+          <fa-icon [icon]="faCaretDown" class="icon"></fa-icon>
+          <span class="icon">{{ bitcoinData.low | currency }}</span>
+        </h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <h4>{{ change | percent: "2.3" }}</h4>
+      </div>
+    </div>
+  </div>
+</div>
