@@ -1,14 +1,21 @@
 .btc-container {
-  padding: 20rem 0rem;
+  text-align: center;
+  padding: 30rem 0rem;
   color: #e6e6e6;
 }
 
 .down {
   background-color: #800000;
+
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .up {
   background-color: #007600;
+
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .icon {
