@@ -23,5 +23,5 @@ FROM nginx:1.19.6-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy the built files into nginx directory
-COPY --from=build /source/dist/portfolio /usr/share/nginx/html
+COPY --from=build /source/dist/bitapp /usr/share/nginx/html
 
