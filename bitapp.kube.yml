@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
       - name: bitapp-web
-        image: chrwalte/bitapp:1.0.0
+        image: chrwalte/bitapp:1.0.1
         ports:
         - containerPort: 80
